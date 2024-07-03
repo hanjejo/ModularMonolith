@@ -1,0 +1,75 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+@baseURL=http://localhost:5036
+
+GET {{baseURL}}/weatherforecast
+
+###
+POST {{baseURL}}/test/returns
+Content-Type: application/json
+
+{
+  "Name": "¿ÀÂ¡¾î"
+}
+
+###
+
+POST {{baseURL}}/test/notifications
+Content-Type: application/json
+
+{
+  "message": "²Ã¶Ñ±â"
+}
+
+###
+
+POST {{baseURL}}/orders
+Content-Type: application/json
+
+{
+  "Id": "01F8MECHZX3TBDSZ7XRADM79XE",
+  "Name": "test",
+  "OrderItems": [
+    {
+      "Id": "01F8MECHZX3TBDSZ7XRADM79XG",
+      "Name": "testItem",
+      "Quantity": 0,
+      "OrderId": "01F8MECHZX3TBDSZ7XRADM79XE"
+    }
+  ]
+}
+
+###
+
+GET {{baseURL}}/orders
+
+###
+
+GET {{baseURL}}/orders/01J1K2Z5ZS1DKZNTKC7J7Q1K34
+
+###
+
+PUT {{baseURL}}/orders/01J1K2Z5ZS1DKZNTKC7J7Q1K34
+Content-Type: application/json
+
+{
+  "id": "01J1K2Z5ZS1DKZNTKC7J7Q1K34",
+  "name": "test",
+  "orderItems": [
+    {
+      "id": "01J1K2Z5ZT66DK0TSQX6QY2VVR",
+      "name": "testItem",
+      "quantity": 5,
+      "orderId": "01J1K2Z5ZS1DKZNTKC7J7Q1K34"
+    }
+  ]
+}
+
+###
+
+PATCH {{baseURL}}/orders/01J1K2Z5ZS1DKZNTKC7J7Q1K34
+Content-Type: application/json
+
+{
+  "orderitemid": "01J1K2Z5ZT66DK0TSQX6QY2VVR",
+  "quantity": 6
+}
