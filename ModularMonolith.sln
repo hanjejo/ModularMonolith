@@ -41,6 +41,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modules.CA.Events", "Module
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modules.VSA", "Modules\VSA\Modules.VSA\Modules.VSA.csproj", "{1E21327E-DB12-4F03-8FD3-A49206A37ABA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks.Infra.Swagger", "BuildingBlocks.Infra.Swagger\BuildingBlocks.Infra.Swagger.csproj", "{4C6EB4E7-B372-4B97-8D76-AA06916AA257}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{1E21327E-DB12-4F03-8FD3-A49206A37ABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E21327E-DB12-4F03-8FD3-A49206A37ABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E21327E-DB12-4F03-8FD3-A49206A37ABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C6EB4E7-B372-4B97-8D76-AA06916AA257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C6EB4E7-B372-4B97-8D76-AA06916AA257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C6EB4E7-B372-4B97-8D76-AA06916AA257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C6EB4E7-B372-4B97-8D76-AA06916AA257}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,6 +125,7 @@ Global
 		{57E9A384-DE82-4E31-886A-9F806435EF5A} = {357EB2E7-F83E-4915-9774-861D1CD9A61D}
 		{9E8B2F08-CC23-42A2-8DA8-B460CC21504F} = {357EB2E7-F83E-4915-9774-861D1CD9A61D}
 		{1E21327E-DB12-4F03-8FD3-A49206A37ABA} = {999FCA8C-7B0A-4249-A87F-3B90E49E3927}
+		{4C6EB4E7-B372-4B97-8D76-AA06916AA257} = {A398BC15-38B7-4FE4-BC18-4D0300B0EF03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {964681C6-29A4-4C50-AED3-A26F30296C98}
